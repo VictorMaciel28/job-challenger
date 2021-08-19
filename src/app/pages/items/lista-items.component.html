@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h2>
+                Meu carrinho
+            </h2>
+        </div>
+        <hr>
+        <div *ngFor="let items of itemsList" class="card-container itemsList">
+            <div class="item">
+                <img class="itemImage" src="{{items.imageUrl}}" alt="{{items.name}}">
+                <div class="arttributes">
+                    <p>{{items.name}}</p>
+                    <p class="small-sellingPrice">R$ {{items.sellingPrice}}</p>
+                    <p class="bigger-sellingPrice">R$ {{items.sellingPrice}}</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="card-footer">
+            <h2 class="total-margin">
+                Total
+            </h2>
+            <h2 class="price-margin">
+                RS {{totalPrice}}
+            </h2>
+        </div>
+            <div *ngIf="totalPrice < 10" class="notification">
+                   <b>Parabéns, sua compra tem frete grátis !</b> 
+            </div>
+        <hr>
+        <div class="footer-btn">
+            <input type="button" value="Finalizar compra" class="finish-button">
+        </div>
+    </div>
+</div>
