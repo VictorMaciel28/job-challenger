@@ -13,7 +13,7 @@ export class ListaItems implements OnInit {
     routeSubscription: Subscription | undefined;
     public itemsList!: Item[];
     public param: any;
-    public totalPrice: number = 10;
+    public totalPrice: number = 0;
 
     constructor(
         private route: ActivatedRoute,
