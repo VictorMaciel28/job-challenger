@@ -6,9 +6,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Descrição do desafio:
 
-## Objetivos:
+
+## Descrição e Objetivos do desafio:
 
 - Desenvolver um “Carrinho de compras” usando uma API.
 - Listar os produtos, exibir o total da compra e exibir uma mensagem informando se o pedido possui frete grátis.
